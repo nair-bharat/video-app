@@ -3,8 +3,9 @@ import Hamburger_icon from "../assets/Hamburger_icon.png";
 import User_icon from "../assets/User_icon.png";
 import YouTube_icon from "../assets/YouTube_Logo.svg";
 import { toggleMenu } from "../utils/navSlice";
-const Head = () => {
+import { Link } from "react-router-dom";
 
+const Head = () => {
   const dispatch = useDispatch();
   const toggleMenuHandler = () => {
     dispatch(toggleMenu());
@@ -15,8 +16,10 @@ const Head = () => {
         <img
           alt="Hamburger_icon"
           src={Hamburger_icon}
+          className="cursor-pointer"
           onClick={() => toggleMenuHandler()}
         />
+
         <img
           alt="Youtube_logo"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png"
