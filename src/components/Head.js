@@ -4,7 +4,6 @@ import User_icon from "../assets/User_icon.png";
 import YouTube_icon from "../assets/YouTube_Logo.svg";
 import { toggleMenu } from "../utils/navSlice";
 const Head = () => {
-
   const dispatch = useDispatch();
   const toggleMenuHandler = () => {
     dispatch(toggleMenu());
@@ -15,6 +14,7 @@ const Head = () => {
         <img
           alt="Hamburger_icon"
           src={Hamburger_icon}
+          className="cursor-pointer"
           onClick={() => toggleMenuHandler()}
         />
         <img
