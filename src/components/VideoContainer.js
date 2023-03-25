@@ -9,7 +9,7 @@ const VideoContainer = () => {
   async function getVideo() {
     const data = await fetch(YOUTUBE_VIDEO_API);
     const json = await data?.json();
-    console.log(json);
+    //console.log(json);
     setVideos(json?.items);
   }
   useEffect(() => {
@@ -20,7 +20,7 @@ const VideoContainer = () => {
     return <ShimmerVideos />;
   }
   return (
-    <div className="flex flex-wrap cursor-pointer">
+    <div className="flex flex-wrap cursor-pointer justify-center">
       {videos.map((video) => (
         <Link to={"watch?v=" + video.id} key={video.id}>
           <VideoCard video={video} />

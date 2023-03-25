@@ -4,7 +4,10 @@ import VideoContainer from "./VideoContainer";
 const MainContainer = () => {
   return (
     <div>
-      <ButtonList />
+      <div className="flex justify-center">
+        <ButtonList />
+      </div>
+
       <VideoContainer />
     </div>
   );
