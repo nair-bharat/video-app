@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import store from "../utils/store";
 
 const Sidebar = () => {
   const menuOpen = useSelector((store) => store.nav.isMenuOpen);

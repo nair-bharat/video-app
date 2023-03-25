@@ -1,9 +1,6 @@
 import { useDispatch } from "react-redux";
 import Hamburger_icon from "../assets/Hamburger_icon.png";
-import User_icon from "../assets/User_icon.png";
-import YouTube_icon from "../assets/YouTube_Logo.svg";
 import { toggleMenu } from "../utils/navSlice";
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { YOUTUBE_SEARCH_API } from "../utils/config";
 
@@ -48,7 +45,7 @@ const Head = () => {
       <div>
         <div className="px-5">
           <input
-            className="w-96 p-1 bg-gray-100 border border-gray-400 rounded-l-full"
+            className="w-96 p-1 bg-gray-100 border border-gray-400 rounded-l-full px-3"
             value={searchQuery}
             onChange={(e) => {
               setSearchQuery(e.target.value);
