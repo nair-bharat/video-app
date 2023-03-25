@@ -22,9 +22,9 @@ const Head = () => {
   useEffect(() => {
     const timer = setTimeout(() => getSearchResults(), 200);
 
-    return (cleanup = () => {
+    return () => {
       clearTimeout(timer);
-    });
+    };
   }, [searchQuery]);
 
   return (
